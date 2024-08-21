@@ -5,13 +5,13 @@ function Hero(){
     <>
     <div className="heroWrapper">
       <div className="underHeader">
-        <img src="https://placehold.co/40" alt="logo" />
+        <img src="https://placehold.co/40" alt="logo" className='logo' />
         <button className="underHeaderButton">Request Inspection</button>
       </div>
       <div className="hello">Your Reliable Roofing Company</div>
       <h1 className='companyName'>Great Roofing</h1>
-      <div className="card1Wrapper">
-        <div className="card1">
+      <div className="heroCard1Wrapper">
+        <div className="heroCard1">
           <h3 className='requestIns'>Request a free inspection</h3>
           <form action="#" className='form1'>
             <select className='select'>

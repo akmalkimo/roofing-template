@@ -10,7 +10,8 @@
 
 :root {
   --background1: hsl(201, 100%, 45%);
-  --background2: hsl(0, 0%, 100%);
+  --background2: hsl(0, 0%, 98%);
+  --background3: hsl(0, 0%, 100%);
   --hamburger-color: black;
   --font1: "poppins";
 }
@@ -37,7 +38,7 @@ h1 {
   font-size: 25px;
 }
 
-h2, .mobileNavWrapper, .normalNav{
+.mobileNavWrapper, .normalNav {
   background-color: var(--background1);
 }
 
@@ -49,7 +50,7 @@ input, textarea {
   width: 100%;
 }
 
-button {
+button, select, option {
   cursor: pointer;
   outline: none;
 }
@@ -232,7 +233,6 @@ svg {
   top: 0;
   z-index: 1;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -243,6 +243,12 @@ svg {
   border-radius: 19px;
   color: var(--background2);
   font-family: 'poppins';
+  position: absolute;
+  right: 5vw;
+}
+
+.logo {
+  margin-left: 5vw;
 }
 
 /* HERO */
@@ -262,12 +268,12 @@ svg {
   z-index: -1;
 }
 
-.card1Wrapper {
+.heroCard1Wrapper {
   display: flex;
-  justify-content: center;
+  margin-left: 5vw;
 }
 
-.card1 {
+.heroCard1 {
   background-color: hsla(0, 0%, 100%, 55%);
   border-radius: 5px;
   width: 90vw;
@@ -279,10 +285,11 @@ svg {
 }
 
 .hello {
-  font-family: "Great Vibes";
-  margin: 20px 10px;
+  font-family: "bebas neue";
+  margin: 20px 5vw;
   font-size: 25px;
   color: var(--background2);
+  font-weight: 400;
 }
 
 .nameWrapper {
@@ -293,7 +300,7 @@ svg {
 
 .companyName {
   font-family: "Bebas Neue";
-  margin: 10px;
+  margin: 10px 5vw;
   color: var(--background2);
   font-size: 60px;
   line-height: 65px;
@@ -343,6 +350,75 @@ svg {
   border-radius: 5px;
   color: var(--background2);
 }
+
+/* ROOFS */
+
+.roofs {
+  display: flex;
+  height: 200vh;
+  background-color: var(--background2);
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+  margin: 30px 0;
+}
+
+.roofs h2,p {
+  text-align: center;
+}
+
+.roofsCard1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  width: 70%;
+  background-color: var(--background3);
+}
+
+.roofsCard1 img {
+  width: 100%;
+  max-width: 289px;
+}
+
+.roofsCard2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  width: 70%;
+  background-color: var(--background3);
+}
+
+.roofsCard2 img {
+  width: 100%;
+  max-width: 289px;
+}
+
+.roofsCard3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  width: 70%;
+  background-color: var(--background3);
+}
+
+.roofsCard3 img {
+  width: 100%;
+  max-width: 289px;
+}
+
+.learnMoreButton {
+  background-color: var(--background1);
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 122px;
+  margin: 10px;
+}
+
 
 /*  PSUEDOCLASSES  */
 
