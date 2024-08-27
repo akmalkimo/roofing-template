@@ -4,10 +4,6 @@ function Hero(){
   return (
     <>
     <div className="heroWrapper">
-      <div className="underHeader">
-        <img src="https://placehold.co/40" alt="logo" className='logo' />
-        <button className="underHeaderButton">Request Inspection</button>
-      </div>
       <div className="hello">Your Reliable Roofing Company</div>
       <h1 className='companyName'>Great Roofing</h1>
       <div className="heroCard1Wrapper">

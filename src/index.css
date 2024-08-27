@@ -55,12 +55,6 @@ button, select, option {
   outline: none;
 }
 
-span {
-  margin: 7px 7px 7px 2px;
-  color: var(--bttn-color);
-  height: 30px;
-}
-
 svg {
   height: 15px;
   cursor: pointer;
@@ -68,11 +62,6 @@ svg {
 
 
 /*  CLASSES  */
-
-
-.textCentered {
-  text-align: center;
-}
 
 .mobileNavWrapper {
   width: 100%;
@@ -255,17 +244,8 @@ svg {
 
 .heroWrapper {
   background-image: url("/public/city-image.jpeg");
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
   background-size: cover;
-}
-
-.img1 {
-  width: 100%;
-  height: 110vh;
-  max-height: 110vh;
-  position: absolute;
-  min-height: 50vh;
-  z-index: -1;
 }
 
 .heroCard1Wrapper {
@@ -286,7 +266,7 @@ svg {
 
 .hello {
   font-family: "bebas neue";
-  margin: 20px 5vw;
+  padding: 20px 5vw;
   font-size: 25px;
   color: var(--background2);
   font-weight: 400;
@@ -353,61 +333,44 @@ svg {
 
 /* ROOFS */
 
+.roofsWrapper {
+  position: relative;
+}
+
 .roofs {
   display: flex;
   height: 200vh;
-  background-color: var(--background2);
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   gap: 5vh;
   margin: 30px 0;
+  position: absolute;
+  top: -70px;
 }
 
-.roofs h2,p {
+.roofs div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  width: 70%;
+  background-color: var(--background3);
+  padding: 10px;
+}
+
+.roofs img {
+  width: 100%;
+  max-width: 289px;
+}
+
+.roofs h2 {
   text-align: center;
 }
 
-.roofsCard1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 50vh;
-  width: 70%;
-  background-color: var(--background3);
-}
-
-.roofsCard1 img {
-  width: 100%;
-  max-width: 289px;
-}
-
-.roofsCard2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 50vh;
-  width: 70%;
-  background-color: var(--background3);
-}
-
-.roofsCard2 img {
-  width: 100%;
-  max-width: 289px;
-}
-
-.roofsCard3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 50vh;
-  width: 70%;
-  background-color: var(--background3);
-}
-
-.roofsCard3 img {
-  width: 100%;
-  max-width: 289px;
+.roofs p {
+  padding: 5px;
+  text-align: center;
 }
 
 .learnMoreButton {
@@ -418,6 +381,84 @@ svg {
   border-radius: 122px;
   margin: 10px;
 }
+
+/* PAGE2 */
+
+.page2 {
+  margin-top: 200vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.page2 img {
+  width: 75vw;
+  height: 20vh;
+  margin: 10px;
+}
+
+.page2 h2 {
+  text-align: center;
+  font-family: 'bebas neue';
+  font-weight: 500;
+  margin: 7px 0;
+}
+
+.blueStripe {
+  background-color: var(--background1);
+  height: 2px;
+  width: 100px;
+  border-radius: 100px;
+}
+
+.page2 p {
+  font-size: 13px;
+  margin: 10px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  background-image: url('public/city-image.jpeg');
+  background-size: cover;
+}
+
+.cover {
+  background-color: hsla(0, 0%, 0%, 70%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover h4 {
+  margin: 50px 0 10px 0;
+  color: white;
+}
+
+.cover h2 {
+  color: white;
+  font-family: 'bebas neue';
+  letter-spacing: 3px;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.testimonial {
+  background-color: var(--background2);
+  margin: 30px;
+  border-bottom-right-radius: 100px;
+  min-height: 50vh;
+  padding: 10px;
+}
+
+
+
+
+
+
 
 
 /*  PSUEDOCLASSES  */
