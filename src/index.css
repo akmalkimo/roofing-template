@@ -452,14 +452,44 @@ svg {
   border-bottom-right-radius: 100px;
   min-height: 50vh;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.yellowStripe {
+  background-color: yellow;
+  height: 2px;
+  width: 100px;
+  border-radius: 100px;
+}
 
+.testTitle {
+  font-family: 'bebas neue';
+  font-weight: 700;
+  font-size: 20px;
+}
 
+.5stars {
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  width: 100vw;
+  height: 100px;
+}
 
+img {
+  height: 30px;
+}
 
+.review {
+  text-align: center;
+}
 
-
+.person {
+  font-weight: 700;
+}
 
 /*  PSUEDOCLASSES  */
 
